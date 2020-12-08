@@ -37,11 +37,30 @@ function fnJs(){
     .pipe(dest('./dist/js'));
 }
 
+function fnPage(){
+    return src('./src/pages/*.html')
+    .pipe(htmlmin())
+    .pipe(rename({suffix : '.min'}))
+    .pipe(dest('./dist/pages'));
+}
+
+function fnlib(){
+    return src('./src/lib/*.js')
+    .pipe(babel({
+        presets: ['@babel/env']
+    }))
+    .pipe(uglify())
+    .pipe(rename({suffix : '.min'}))
+    .pipe(dest('./dist/lib'));
+}
+
 function fnWatch(){
     watch('./src/index.html',fnCopyIndex);
     watch('./src/sass/*.scss',fnCss);
     watch('./src/img/**',fnImg);
-    watch('./src/js/*.js',fnJs)
+    watch('./src/js/*.js',fnJs);
+    watch('./src/pages/*.html',fnPage);
+    watch('./src/lib/*.js',fnlib)
 }
 
 
@@ -50,4 +69,6 @@ exports.index = fnCopyIndex;
 exports.css = fnCss;
 exports.img = fnImg;
 exports.js = fnJs;
+exports.page = fnPage;
+exports.lib = fnlib;
 exports.default = fnWatch;
