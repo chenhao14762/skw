@@ -46,6 +46,19 @@ class header{
             this.play_img.css('display','none');
             this.video.css('zIndex','7');
         }.bind(this));
+        $('#go').click(function(){
+            location.href = 'pages/login.min.html';
+        })
+        $('#re').click(function(){
+            location.href = 'pages/register.min.html';
+        })
+
+
+        //列表页
+        $('#man').click(function(){
+            location.href = 'pages/list.min.html'
+        })
+        
     }
 }
 new header();     

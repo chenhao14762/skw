@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/login.min.css">
 </head>
 <body>
@@ -15,7 +14,7 @@
                 <img src="../img/R_logo.png" alt="">
             </div>
             <div class="explain">
-                <a href="#">寺库首页</a>
+                <a href="#" id="index">寺库首页</a>
                 <a href="#">收藏寺库</a>
                 <a href="#">寺库APP</a>
             </div>     
@@ -28,6 +27,85 @@
         <div class="bg_center">
             <div class="bg_right">
                 <div class="phone">
+                    <div class="top_title">
+                        <ul>
+                            <li class="on">扫码登录</li>
+                            <li class="off">密码登录</li>
+                        </ul>
+                    </div>
+                    <div class="center_content_clone">
+                        <div class="top_Img">
+                            <img src="../img/show.png" alt="" id="pre">
+                            <img src="../img/phone.jpg" alt="" id="per">
+                        </div>
+                        <p>
+                            打开
+                            <a href="#">寺库app</a>
+                            扫一扫登录
+                        </p>
+                    </div>
+                    <div class="center_content">
+                        <div style>
+                            <ul class="input_arr">
+                                <li id="error" style="display: none;"></li>
+                                <li>
+                                    <div class="name">
+                                        <label class="lab" for="name">用户名/手机号/邮箱</label>
+                                        <input type="text" id="name" autocomplete="off">
+                                        <span class="personal"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="password">
+                                        <label class="lab-p" for="upwd">密码</label>
+                                        <input type="password" id="upwd">
+                                        <span class="nex"></span>
+                                    </div>
+                                </li>
+                                <li class="Vf_code">
+                                    <div class="text_wr">
+                                        验证码
+                                        <span id="tips"></span>
+                                    </div>
+                                    <div class="code">
+                                        <input type="text" value="" class="input-val" />
+			                            <canvas id="canvas"></canvas>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="remem" id="la">
+                                        <input type="checkbox" checked id="remem">
+                                        <span>记住账号</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="btn-submit">
+                                <input type="button" id="loginbtn" value="立即登录">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="web-qw">
+                        <p>使用合作网站账号登录</p>
+                        <p>
+                            <a href="#">
+                                <img src="../img/qq.jpg" alt="" class="qq">
+                                <span>QQ</span>
+                            </a>
+                            <a href="#">
+                                <img src="../img/WeChat.png" alt="" class="wei">
+                                <span>微信</span>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="R_msg">
+                        <div class="left_">
+                            <span>还不是寺库会员？</span>
+                            <a href="#" class="regis">免费注册</a>
+                        </div>
+                        <div class="right_">
+                            <a href="#">忘记密码？</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -87,7 +165,7 @@
 
     <script src="../lib/jquery.min.js"></script>
     <script src="../lib/cookie.min.js"></script>
-    <script src="../lib/bootstrap.min.js"></script>
-    <script src="../js/register.min.js"></script>
+    <script src="../lib/code.min.js"></script>
+    <script src="../js//login.min.js"></script>
 </body>
 </html>

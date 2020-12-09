@@ -1,1 +1,252 @@
 @import'public';
+.list-product{
+    background: #ededed;
+    .selec-list{
+        width: 1200px;
+        margin: 0 auto;
+        background: #ededed;
+        .selec-btn{
+            line-height: 19px;
+            padding: 25px 0 16px 0;
+            position: relative;
+            .all{
+                text-decoration: none;
+                color: #666;
+            }
+            .all:hover{
+                color: #e93b39;
+            }
+            i{
+                display: inline-block;
+                width: 20px;
+                height: 12px;
+                background: url(../img/list_icon.png) no-repeat 10px 4px;
+            }
+            .hhhi{
+                text-decoration: none;
+                color: #666;
+                margin-left: 6px;
+                padding: 4px;
+                border: 1px solid transparent;
+                position: absolute;
+                top: 20px;
+                z-index: 4;
+                span{
+                    margin-left: 4px;
+                    margin-bottom: 2px;
+                    display: inline-block;
+                    width: 7px;
+                    height: 4px;
+                    background: url(../img/list_icon.png) no-repeat -20px 0;
+                    transition: all .3s;
+                }
+            }
+            .hide{
+                display: none;
+                box-shadow: 0 0 13px rgba(204,204,204,1);
+                padding-left: 40px;
+                background: #fff;
+                border: 1px solid #ccc;
+                margin-top: 3px;
+                position: absolute;
+                z-index: 2;
+                ul{
+                    width: 100%;
+                    padding: 22px 0 16px 0;
+                    li{
+                        display: inline-block;
+                        width: 9.7%;
+                        margin-bottom: 8px;
+                        height: 26px;
+                        line-height: 26px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        a{
+                            color: #666;
+                        }
+                        a:hover{
+                            text-decoration: underline;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+        .important-list{
+            width: 1200px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(204,204,204,1);
+            .imp-ul{
+                border-bottom: 1px dashed #ededed;
+                position: relative;
+                min-height: 46px;
+                background: #f5f5f5;
+                h4{
+                    float: left;
+                    width: 81px;
+                    line-height: 45px;
+                    padding-left: 30px;
+                    color: #666;
+                    font-weight: normal;
+                }
+                .lis{
+                    padding: 7px 0 4px 0;
+                    width: 1089px;
+                    margin-left: 111px;
+                    padding-left: 10px;
+                    background: #fff;
+                    li{
+                        display: inline-block;
+                        a{
+                            display: inline-block;
+                            text-decoration: none;
+                            color: #666;
+                            padding: 0 22px 0 10px;
+                            width: 155px;
+                            height: 22px;
+                            text-indent: 5px;
+                            margin: 5px 5px 5px 0;
+                            padding-left: 5px;
+                        }
+                        a:hover{
+                            color: #e93b39;
+                        }
+                    }
+                }
+                .add{
+                    position: absolute;
+                    right: 70px;
+                    top: 18px;
+                    span{
+                        color: #666;
+                    }
+                    i{
+                        display: inline-block;
+                        width: 10px;
+                        height: 12px;
+                        background: url(../img/list_icon.png) no-repeat 0 -70px;
+                    }
+                }
+                .add:hover span{
+                    color: #e93b39;
+                }
+                .add:hover i{
+                    background-position: 0 -89px;
+                }
+            }
+            .imp-center{
+                border-bottom: 1px dashed #ededed;
+                position: relative;
+                min-height: 46px;
+                background: #f5f5f5;
+                h4{
+                    float: left;
+                    width: 81px;
+                    line-height: 45px;
+                    padding-left: 30px;
+                    color: #666;
+                    font-weight: normal;
+                    background: #f5f5f5;
+                }
+                .li-item{
+                    padding: 3px 0 8px 0;
+                    width: 1089px;
+                    margin-left: 111px;
+                    background: #fff;
+                    padding-left: 10px;
+                    li{
+                        display: inline-block;
+                        a{
+                            display: inline-block;
+                            text-decoration: none;
+                            color: #666;
+                            padding: 0 22px 0 10px;
+                            margin: 12px 0 0;
+                            white-space: nowrap;
+                            height: 24px;
+                        }
+                        a:hover{
+                            color: #e93b39;
+                        }
+                    }
+                }
+                .add{
+                    position: absolute;
+                    right: 70px;
+                    top: 15px;
+                    span{
+                        color: #666;
+                    }
+                    i{
+                        display: inline-block;
+                        width: 10px;
+                        height: 12px;
+                        background: url(../img/list_icon.png) no-repeat 0 -70px;
+                    }
+                }
+                .add:hover span{
+                    color: #e93b39;
+                }
+                .add:hover i{
+                    background-position: 0 -89px;
+                }
+            }
+        }
+        .more{
+            width: 1200px;
+            padding-bottom: 8px;
+            margin-top: 1px;
+            .see{
+                position: relative;
+                display: block;
+                margin: 0 auto;
+                text-indent: 12px;
+                width: 80px;
+                height: 21px;
+                line-height: 21px;
+                background: #fff;
+                box-shadow:  0 2px 5px rgb(204,204,204);
+                color: #666;
+                cursor: pointer;
+                i{
+                    position: absolute;
+                    top: 5px;
+                    width: 20px;
+                    height: 12px;
+                    background: url(../img/list_icon.png) no-repeat 5px -109px;
+                }
+            }
+            .see:hover span{
+                color: #e93b39;
+            }
+            .see:hover i{
+                background-position: 5px -424px;
+            }
+        }
+    }
+}
+.fixs{
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    left: 50%;
+    margin-left: 605px;
+    bottom: 20%;
+    z-index: 99;
+    background: #fff;
+    box-shadow: 0 0 2px #666;
+    em{
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background: url(../img/fixed.png) no-repeat -52px 2px;
+    }
+}
+.fixs:hover{
+    background: black;
+}
+.fixs:hover em{
+    background-position: 0 2px;
+}

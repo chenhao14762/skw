@@ -158,6 +158,10 @@ class register{
         $('.login').click(function(){
             location.href = 'login.min.html';
         })
+        //回到首页
+        $('#index').click(function(){
+            location.href = '../index.html';
+        })
     }
     convertStrToObj(str){
         if(!str){
