@@ -51,7 +51,7 @@ class register{
                 this.arr[1] = true;
             }else{
                 this.password.css('borderColor','#9d003f');
-                $('.upwd').text('请输入正确的密码!');
+                $('.upwd').text('请输入大小写加数字!');
                 $('.upwd').css({
                     color : function(){
                         return 'red';
