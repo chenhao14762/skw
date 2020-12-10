@@ -206,6 +206,9 @@ footer .number a p { float: left; color: black; text-indent: 5px; color: #939393
 .fixed img { width: 100%; height: 100%; }
 
 /*公共部分*/
+body { -moz-user-select: none; /*火狐*/ /*禁止用户在页面选择文字*/ -webkit-user-select: none; /*webkit浏览器*/ -ms-user-select: none; /*IE10*/ -khtml-user-select: none; /*早期浏览器*/ user-select: none; }
+
+/*列表*/
 .list-product { background: #ededed; }
 
 .list-product .selec-list { width: 1200px; margin: 0 auto; background: #ededed; }
@@ -238,7 +241,7 @@ footer .number a p { float: left; color: black; text-indent: 5px; color: #939393
 
 .list-product .selec-list .important-list .imp-ul h4 { float: left; width: 81px; line-height: 45px; padding-left: 30px; color: #666; font-weight: normal; }
 
-.list-product .selec-list .important-list .imp-ul .lis { padding: 7px 0 4px 0; width: 1089px; margin-left: 111px; padding-left: 10px; background: #fff; }
+.list-product .selec-list .important-list .imp-ul .lis { padding: 7px 0 4px 0; width: 1079px; margin-left: 111px; padding-left: 10px; background: #fff; }
 
 .list-product .selec-list .important-list .imp-ul .lis li { display: inline-block; }
 
@@ -260,7 +263,7 @@ footer .number a p { float: left; color: black; text-indent: 5px; color: #939393
 
 .list-product .selec-list .important-list .imp-center h4 { float: left; width: 81px; line-height: 45px; padding-left: 30px; color: #666; font-weight: normal; background: #f5f5f5; }
 
-.list-product .selec-list .important-list .imp-center .li-item { padding: 3px 0 8px 0; width: 1089px; margin-left: 111px; background: #fff; padding-left: 10px; }
+.list-product .selec-list .important-list .imp-center .li-item { padding: 3px 0 8px 0; width: 1079px; margin-left: 111px; background: #fff; padding-left: 10px; }
 
 .list-product .selec-list .important-list .imp-center .li-item li { display: inline-block; }
 
@@ -288,6 +291,135 @@ footer .number a p { float: left; color: black; text-indent: 5px; color: #939393
 
 .list-product .selec-list .more .see:hover i { background-position: 5px -424px; }
 
+/*列表*/
+/*图文列表*/
+.proback { background: #ededed; padding-bottom: 100px; }
+
+.proback .product_box { background: #fff; width: 1200px; margin: 0 auto; box-shadow: 0 2px 5px #cccccc; position: relative; }
+
+.proback .product_box .pro_top { background: #fff; height: 40px; }
+
+.proback .product_box .pro_top a { border-top: 2px solid transparent; display: inline-block; height: 29px; text-align: center; font-size: 18px; line-height: 18px; padding: 0 30px; padding-top: 9px; color: #999; }
+
+.proback .product_box .pro_top a:hover { color: #e93b39; }
+
+.proback .product_box .pro_top :nth-child(2) { background: url(../img/listline.jpg) no-repeat center left; margin-left: -3px; }
+
+.proback .product_box .price { height: 44px; position: sticky; top: 0; left: 0; z-index: 10; }
+
+.proback .product_box .price .pro_control { padding: 10px 30px 0; min-height: 30px; background: #f5f5f5; font-size: 0; position: relative; }
+
+.proback .product_box .price .pro_control .pro_control_btn { float: left; margin-right: 10px; }
+
+.proback .product_box .price .pro_control .pro_control_btn a { display: inline-block; width: 45px; height: 22px; background: #fff; text-indent: 6px; border: 1px solid #ededed; line-height: 20px; margin-left: -3px; position: relative; border: 1px solid transparent; color: #666666; }
+
+.proback .product_box .price .pro_control .pro_control_btn a i { position: absolute; top: 6px; width: 12px; height: 12px; background: url(../img/list_icon.png) no-repeat; background-position: 5px -184px; }
+
+.proback .product_box .price .pro_control .pro_control_btn a .double { background-position: 5px -217px; }
+
+.proback .product_box .price .pro_control .pro_control_btn a:hover { border: 1px solid #e93b39; }
+
+.proback .product_box .price .pro_control .pro_control_btn a:hover span { color: #e93b39; }
+
+.proback .product_box .price .pro_control .pro_control_btn a:hover i { background-position: 5px -204px; }
+
+.proback .product_box .price .pro_control .pro_control_btn a:hover .double { background-position: 5px -245px; }
+
+.proback .product_box .price .pro_control .pro_control_btn .redbg { background: #e93b39; }
+
+.proback .product_box .price .pro_control .pro_control_btn .redbg span { color: white; }
+
+.proback .product_box .price .pro_control .pro_control_btn .redbg i { background-position: 5px -194px; }
+
+.proback .product_box .price .pro_control .pro_control_btn .redbg .double { background-position: 5px -259px; }
+
+.proback .product_box .price .pro_control .pro_control_price { display: inline-block; width: 124px; height: 44px; overflow: hidden; margin: -10px 10px 0 0; }
+
+.proback .product_box .price .pro_control .pro_control_price .two_inp { width: 114px; height: 24px; padding: 10px 10px 0; text-align: center; vertical-align: middle; overflow: hidden; position: relative; }
+
+.proback .product_box .price .pro_control .pro_control_price .two_inp span { width: 45px; height: 22px; border: 1px solid #ededed; background: url(../img/list_icon.png) no-repeat; background-position: 3px -281px; background-color: white; text-align: right; display: inline-block; }
+
+.proback .product_box .price .pro_control .pro_control_price .two_inp span input { width: 33px; height: 14px; outline: none; border: none; }
+
+.proback .product_box .price .pro_control .pro_control_price .two_inp i { display: inline-block; width: 8px; height: 3px; border-top: 1px solid #acacac; vertical-align: middle; margin-top: 5px; }
+
+.proback .product_box .price .pro_control .pro_control_price .two_inp .empty { border: 1px solid #e0e0e0; background: white; color: #666; width: 45px; height: 18px; line-height: 17px; margin: 10px 0; margin-right: 15px; position: absolute; left: 13px; bottom: -39px; }
+
+.proback .product_box .price .pro_control .pro_control_price .two_inp .enter { border: 1px solid #e0e0e0; background: white; color: #666; width: 45px; height: 18px; line-height: 17px; margin: 10px 0; position: absolute; right: 13px; bottom: -39px; }
+
+.proback .product_box .price .pro_control .pro_control_check { height: 34px; display: inline-block; vertical-align: top; }
+
+.proback .product_box .price .pro_control .pro_control_check label { display: inline-block; padding-top: 6px; padding-right: 15px; color: #666; }
+
+.proback .product_box .price .pro_control .pro_control_check label input { display: inline-block; padding-right: 5px; }
+
+.proback .product_box .price .pro_control .pro_control_check .selectt { color: #000; }
+
+.proback .product_box .price .pro_control .pro_control_search { width: 192px; height: 44px; display: inline-block; overflow: hidden; margin: -10px 0 0 0; }
+
+.proback .product_box .price .pro_control .pro_control_search div { position: relative; width: 192px; height: 24px; padding: 10px 0 0; }
+
+.proback .product_box .price .pro_control .pro_control_search div span { width: 149px; height: 22px; display: inline-block; border: 1px solid #ededed; background: #fff; }
+
+.proback .product_box .price .pro_control .pro_control_search div span input { width: 139px; height: 15px; border: 0; padding-left: 10px; margin-top: 3px; color: #bbb6b6; outline: none; font-size: 12px; }
+
+.proback .product_box .price .pro_control .pro_control_search div a { width: 40px; height: 19px; display: inline-block; padding-top: 3px; position: absolute; right: 0; bottom: 0; border: 1px solid #ededed; text-align: center; color: #666; background: #fff; }
+
+.proback .product_box .price .pro_control .pro_control_search div a:hover { border: 1px solid #000; }
+
+.proback .product_box .price .pro_control .pro_control_page { position: absolute; right: 30px; top: 12px; height: 19px; }
+
+.proback .product_box .price .pro_control .pro_control_page a { width: 18px; height: 18px; display: inline-block; text-align: center; float: left; border: 1px solid #ccc; }
+
+.proback .product_box .price .pro_control .pro_control_page a i { width: 6px; height: 9px; display: inline-block; background: url(../img/list_icon.png) no-repeat -186px 0; }
+
+.proback .product_box .price .pro_control .pro_control_page a .next { background: url(../img/list_icon.png) no-repeat -194px -29px; }
+
+.proback .product_box .price .pro_control .pro_control_page span { float: left; height: 20px; line-height: 19px; padding: 0 10px; color: #333; }
+
+.proback .product_box .price .pro_control .pro_control_page span b { color: #e93b39; }
+
+.proback .product_box #skity { box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2); }
+
+.proback .product_box .commodity-list { background: #fff; padding: 30px 20px 2px; }
+
+.proback .product_box .commodity-list .styles:nth-child(4n) { margin-right: 0; }
+
+.proback .product_box .commodity-list .styles { width: 240px; height: 360px; margin: 0 25px 56px 25px; position: relative; z-index: 2; display: inline-block; }
+
+.proback .product_box .commodity-list .styles .content { position: relative; z-index: 2; }
+
+.proback .product_box .commodity-list .styles .content .Img { width: 240px; height: 240px; }
+
+.proback .product_box .commodity-list .styles .content .ifo { width: 240px; height: 16px; margin-top: 15px; }
+
+.proback .product_box .commodity-list .styles .content .ifo span { color: white; padding: 1px 2px; }
+
+.proback .product_box .commodity-list .styles .content .ifo .s1 { background: #000; }
+
+.proback .product_box .commodity-list .styles .content .ifo .s2 { background: #e93b39; }
+
+.proback .product_box .commodity-list .styles .content .line { height: 28px; padding: 8px 0 3px; line-height: 15px; border-top: 1px solid #ebebeb; margin-top: 10px; }
+
+.proback .product_box .commodity-list .styles .content .line a { color: #323232; }
+
+.proback .product_box .commodity-list .styles .content .line a:hover { text-decoration: underline; }
+
+.proback .product_box .commodity-list .styles .content .Price { position: relative; padding-top: 3px; }
+
+.proback .product_box .commodity-list .styles .content .Price b { font-size: 12px; line-height: 16px; }
+
+.proback .product_box .commodity-list .styles .content .Price .sc { position: absolute; right: 0; top: 0; width: 38px; height: 20px; line-height: 20px; background: url(../img/repeat.png) no-repeat 0 6px; color: #999; cursor: pointer; text-indent: 12px; display: none; }
+
+.proback .product_box .commodity-list .styles .content .Price .sc:hover { color: #e93b39; background-position: 0 -29px; }
+
+.proback .product_box .commodity-list .styles .content:hover + .bgindex { display: block; }
+
+.proback .product_box .commodity-list .styles .content:hover .sc { display: block; }
+
+.proback .product_box .commodity-list .styles .bgindex { width: 260px; height: 380px; border: 1px solid #ccc; position: absolute; top: -10px; left: -10px; display: none; }
+
+/*小火箭*/
 .fixs { display: none; width: 40px; height: 40px; position: fixed; left: 50%; margin-left: 605px; bottom: 20%; z-index: 99; background: #fff; box-shadow: 0 0 2px #666; }
 
 .fixs em { display: inline-block; width: 40px; height: 40px; background: url(../img/fixed.png) no-repeat -52px 2px; }

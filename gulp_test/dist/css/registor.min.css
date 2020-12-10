@@ -7,6 +7,8 @@ a { text-decoration: none; }
 
 img { border: none; }
 
+body { -moz-user-select: none; /*火狐*/ /*禁止用户在页面选择文字*/ -webkit-user-select: none; /*webkit浏览器*/ -ms-user-select: none; /*IE10*/ -khtml-user-select: none; /*早期浏览器*/ user-select: none; }
+
 /*header开始*/
 header { width: 100%; height: 70px; background: rgba(0, 0, 0, 0.8); }
 

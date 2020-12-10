@@ -1,4 +1,16 @@
 @import'public';
+body{
+    -moz-user-select: none;
+    /*火狐*/
+    /*禁止用户在页面选择文字*/
+    -webkit-user-select: none;
+    /*webkit浏览器*/
+    -ms-user-select: none;
+    /*IE10*/
+    -khtml-user-select: none;
+    /*早期浏览器*/
+    user-select: none;
+}
 /*公共部分开始*/
 
 /*公共部分结束*/
